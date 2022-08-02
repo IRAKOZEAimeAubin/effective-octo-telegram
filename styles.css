@@ -4,4 +4,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #7c6f63;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
