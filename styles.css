@@ -12,12 +12,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #7c6f63;
+    background-color: #80461B;
+    border-bottom: 0.08rem solid #04030f;
 }
 
 .logo a {
     text-decoration: none;
-    color: #ffffff;
+    color: #e7e393;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
     font-size: 1.05rem;
@@ -32,9 +33,28 @@ nav {
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #e7e393;
     text-decoration: none;
     letter-spacing: 0.05rem;
     font-weight: 600;
     font-size: 0.9rem;
+}
+
+section.container {
+    background: #80461B;
+    min-height: 92vh;
+    display: flex;
+}
+
+.form {
+    margin: auto;
+    max-width: 20%;
+    text-align: center;
+    background: #e7e393;
+    padding: 2rem;
+}
+
+.creation-form {
+    display: flex;
+    flex-direction: column;
 }
