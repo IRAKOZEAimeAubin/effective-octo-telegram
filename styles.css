@@ -40,7 +40,7 @@ nav {
     font-size: 0.9rem;
 }
 
-section.creation {
+section.container {
     background: #80461B;
     min-height: 92vh;
     display: flex;
@@ -106,7 +106,82 @@ input[type="button"]:hover {
     opacity: 1;
 }
 
-section.list {
+.products-list {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.coffee,
+.tea,
+.bread {
+    display: flex;
+    flex-direction: column;
+    background: #e7e393;
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 0 rgba(4, 3, 15, 0.4),
+            0 5px 5px 0 rgba(4, 3, 15, 0.44);
+}
+
+.coffee,
+.tea {
+    margin-right: 4rem;
+}
+
+span.category,
+span.name,
+span.price {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.coffee span.name {
+    color: #04030f;
+}
+
+.tea span.name {
+    color: #dd7230;
+}
+
+.bread span.name {
+    color: #f4c95d;
+}
+
+span.category {
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+span.name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+span.price {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.coffee a,
+.tea a,
+.bread a {
+    text-decoration: none;
+    text-align: center;
+    color: #04030f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
     background: #80461B;
-    min-height: 92vh;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.2rem;
+    opacity: 0.9;
+}
+
+.coffee a:hover,
+.tea a:hover,
+.bread a:hover {
+    opacity: 1;
 }
