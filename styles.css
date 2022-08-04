@@ -48,13 +48,56 @@ section.container {
 
 .form {
     margin: auto;
-    max-width: 20%;
+    max-width: 80%;
     text-align: center;
     background: #e7e393;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    box-shadow: 0 0 20px 0 rgba(4, 3, 15, 0.4),
+        0 5px 5px 0 rgba(4, 3, 15, 0.44);
+}
+
+span.title {
+    font-weight: 600;
+    color: #04030f;
+    letter-spacing: 0.08rem;
 }
 
 .creation-form {
     display: flex;
     flex-direction: column;
+}
+
+input[type = "text"],
+input[type="date"] {
+    margin-bottom: 0.8rem;
+    padding: 0.4rem;
+    border: 0.01rem solid #04030f;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+input[type="text"]:nth-child(1) {
+    margin-top: 0.8rem;
+}
+
+span.label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input[type="button"] {
+    padding: 0.4rem;
+    background: #80461B;
+    color: #e7e393;
+    opacity: 0.7;
+    border: none;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+}
+
+input[type="button"]:hover {
+    opacity: 1;
 }
