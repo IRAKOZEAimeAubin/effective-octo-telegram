@@ -38,6 +38,15 @@ nav {
     letter-spacing: 0.05rem;
     font-weight: 600;
     font-size: 0.9rem;
+    transition: all 0.2s ease-in;
+}
+
+.nav-links a:hover {
+    color: #04030f;
+}
+
+a.active {
+    color: #04030f;
 }
 
 section.container {
@@ -178,10 +187,133 @@ span.price {
     padding: 0.4rem 0.8rem;
     border-radius: 0.2rem;
     opacity: 0.9;
+    transition: all 0.2s ease-in-out;
 }
 
 .coffee a:hover,
 .tea a:hover,
 .bread a:hover {
     opacity: 1;
+}
+
+.products-info {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 90%;
+}
+
+.card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 8rem;
+    height: 8rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.card span {
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #04030f;
+    margin-top: 1rem;
+}
+
+.card button {
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in;
+}
+
+.card-coffee {
+    border-radius: 1rem 0 0 1rem;
+    background: #e7e393;
+}
+
+.card-bread {
+    border-radius: 0 1rem 1rem 0;
+    background: #dd7230;
+}
+
+.card-coffee button {
+    background: #80461B;
+    color: #04030f;
+}
+
+.card-coffee button:hover {
+    background: #04030f;
+    color: #80461B;
+}
+
+.card-tea button {
+    background: #e7e393;
+    color: #04030f;
+}
+
+.card-tea button:hover {
+    background: #04030f;
+    color: #e7e393;
+}
+
+.card-bread button {
+    background: #04030f;
+    color: #e7e393;
+}
+
+.card-bread button:hover {
+    background: #e7e393;
+    color: #04030f;
+}
+
+.intro {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro a {
+    color: #e7e393;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.intro p {
+    color: #04030f;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.intro a.lg {
+    background: #04030f;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    transition: all 0.5s ease-out;
+    font-weight: 500;
+}
+
+.intro a.lg:hover {
+    color: #04030f;
+    background: #e7e393;
 }
